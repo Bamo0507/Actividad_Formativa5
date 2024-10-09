@@ -1,3 +1,5 @@
+from lib.utils import validateNumber
+
 """
 ---------- Actividad Formativa 5 ----------
 ---------- Inciso 1 ----------
@@ -20,18 +22,6 @@ def criba(n):
         primeNumbers.append(i)
         
     return primeNumbers
-##########################################
-def validateNumber(n):
-    try:
-        number = int(n)
-        if number <= 0 or number == 1:
-            print("El número seleccionado es inválido, no puede ser negativo, ni igual a 1 o 0.")
-            return False
-        else:
-            return True
-    except ValueError:
-        print("El input no es un número entero.\nPor favor, vuelva a intentarlo.\n")
-        return False
 ##########################################
 """
 -------------- Lógica del Programa -------------------
