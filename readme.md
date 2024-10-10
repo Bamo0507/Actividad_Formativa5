@@ -15,14 +15,15 @@ El programa principal presenta un menú interactivo que permite al usuario selec
 
 ```bash
 project/
-│ ├── lib/
-│ ├── utils.py
-│ └── bezout.py
+├── bezout.py
 ├── criba.py
 ├── euclidean.py
 ├── isPrime.py
+├── bono.py
 ├── main.py
-│ ├── tests/
+├── lib/
+│ └── utils.py
+├── tests/
 │ ├── test_utils.py
 │ ├── test_euclidean.py
 │ ├── test_bezout.py
