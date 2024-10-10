@@ -2,7 +2,7 @@ from bono import factor
 from euclidean import euclidean
 from bezout import bezout
 from criba import get_primes
-from IsPrime import is_prime
+from isPrime import is_prime
 from lib.utils import validate_positive_integers
 import sys
 
