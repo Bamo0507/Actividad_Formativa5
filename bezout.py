@@ -1,13 +1,23 @@
+# -----------------------------------------------------------
+# Actividad Formativa
+# Integrantes:
+# Bryan Martínez 23542
+# Luis Mendoza 19644
+# Daniela Ramírez 23053
+# -----------------------------------------------------------
+
 from lib.utils import validate_positive_integers
 import numpy as np
 
 def bezout(a, b):
+    #Validación de inputs recibos
     if not validate_positive_integers(a, b):
         raise ValueError("Ambos números deben ser enteros positivos.")
     
     X = np.array([[1, 0],
                   [0, 1]])
     
+    #Se define un ciclo while hasta que el residuo del algoritmo sea 0
     while b != 0:
         q = a // b
         

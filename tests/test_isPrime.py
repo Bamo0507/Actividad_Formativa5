@@ -1,5 +1,5 @@
 import unittest
-from isPrime import Test_Primalidad
+from IsPrime import Test_Primalidad
 
 class TestIsPrime(unittest.TestCase):
     

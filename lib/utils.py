@@ -1,3 +1,5 @@
+##Funciones generadas para obtener datos apropiados por parte del usuario
+##Permite manejar que los inputs ingresados sean enteros mayores a 1
 def validateNumber(n):
     try:
         number = int(n)

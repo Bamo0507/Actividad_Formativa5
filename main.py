@@ -1,20 +1,32 @@
+# -----------------------------------------------------------
+# Actividad Formativa
+# Integrantes:
+# Bryan Martínez 23542
+# Luis Mendoza 19644
+# Daniela Ramírez 23053
+# -----------------------------------------------------------
+
 from bono import factor
 from euclidean import euclidean
 from bezout import bezout
 from criba import get_primes
-from isPrime import is_prime
+from IsPrime import is_prime
 from lib.utils import validate_positive_integers
 import sys
 
+
+#Menú para el algoritmo euclidiano
 def euclidean_menu():
     print("---------- Algoritmo Euclidiano ----------")
     try:
+        #SOLICITUD DE INFORMACIÓN
         a_input = input("Ingrese un entero positivo a: ")
         b_input = input("Ingrese un entero positivo b: ")
         
         a = int(a_input)
         b = int(b_input)
         
+        #Validación de inputs dados por usuario
         if not validate_positive_integers(a, b):
             print("Error: Ambos números deben ser enteros positivos.")
             return
@@ -27,15 +39,17 @@ def euclidean_menu():
         print("Error: Entrada inválida. Por favor, ingrese números enteros positivos.")
     print("-----------------------------------------")
 
+#Menú para obtener los coeficientes de Bézout
 def bezout_menu():
     print("---------- Coeficientes de Bézout ----------")
     try:
+        #Solicitud de datos
         a_input = input("Ingrese un entero positivo a: ")
         b_input = input("Ingrese un entero positivo b: ")
         
         a = int(a_input)
         b = int(b_input)
-        
+        #Validación de inputs dados por usuario
         if not validate_positive_integers(a, b):
             print("Error: Ambos números deben ser enteros positivos.")
             return
@@ -48,6 +62,8 @@ def bezout_menu():
         print(f"Error: {ve}")
     print("---------------------------------------------")
 
+#------------------------
+#Funciones implementadas para las opciónes del menú
 def criba_menu():
     get_primes()
 
@@ -56,8 +72,9 @@ def is_prime_menu():
 
 def factor_menu():
     factor()
+#----------------------------
 
-
+##Menú Principal con todas las opciones de la Actividad Formativa
 def main_menu():
     while True:
         print("\n========== Menú de Algoritmos ==========")
@@ -87,5 +104,6 @@ def main_menu():
         else:
             print("Opción inválida. Por favor, seleccione una opción del 1 al 6.")
 
+##Llamada a la función main
 if __name__ == "__main__":
     main_menu()
