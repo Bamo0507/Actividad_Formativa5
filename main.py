@@ -1,7 +1,8 @@
+from bono import factor
 from euclidean import euclidean
 from bezout import bezout
 from criba import get_primes
-from isPrime import is_prime
+from IsPrime import is_prime
 from lib.utils import validate_positive_integers
 import sys
 
@@ -53,6 +54,10 @@ def criba_menu():
 def is_prime_menu():
     is_prime()
 
+def factor_menu():
+    factor()
+
+
 def main_menu():
     while True:
         print("\n========== Menú de Algoritmos ==========")
@@ -60,10 +65,11 @@ def main_menu():
         print("2. Verificar si un número es primo")
         print("3. Algoritmo Euclidiano (MCD)")
         print("4. Coeficientes de Bézout")
-        print("5. Salir")
+        print("5. Factorización prima")
+        print("6. Salir")
         print("=========================================")
         
-        choice = input("Seleccione una opción (1-5): ")
+        choice = input("Seleccione una opción (1-6): ")
         
         if choice == '1':
             criba_menu()
@@ -74,10 +80,12 @@ def main_menu():
         elif choice == '4':
             bezout_menu()
         elif choice == '5':
+            factor_menu()
+        elif choice == '6':
             print("Saliendo del programa. ¡Hasta luego!")
             sys.exit()
         else:
-            print("Opción inválida. Por favor, seleccione una opción del 1 al 5.")
+            print("Opción inválida. Por favor, seleccione una opción del 1 al 6.")
 
 if __name__ == "__main__":
     main_menu()

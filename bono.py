@@ -17,7 +17,7 @@ def factorizacion(n):
         i += 1
     return r
 
-def main():
+def factor():
     num = int(input("Ingrese un número que sea mayor a 1: "))
     if num <= 1:
         print("El número debe ser mayor a 1")
@@ -27,4 +27,4 @@ def main():
     print("Los factores primos de", f"{num}", "son:", r)
 
 if __name__ == "__main__":
-    main()
+    factor()
