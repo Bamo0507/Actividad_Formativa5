@@ -29,7 +29,7 @@ project/
 │ ├── test_bezout.py
 │ ├── test_criba.py
 │ ├── test_isPrime.py
-│ └── README.md
+└── README.md
 ```
 
 - **lib/utils.py**: Contiene funciones de validación utilizadas por otros módulos.
