@@ -13,6 +13,7 @@ El programa principal presenta un menú interactivo que permite al usuario selec
 
 ## **Estructura del Proyecto**
 
+```bash
 project/
 │ ├── lib/
 │ ├── utils.py
@@ -28,6 +29,7 @@ project/
 │ ├── test_criba.py
 │ ├── test_isPrime.py
 │ └── README.md
+```
 
 - **lib/utils.py**: Contiene funciones de validación utilizadas por otros módulos.
 - **bezout.py**: Implementa el algoritmo de Bézout para encontrar coeficientes que satisfacen la ecuación de Bézout.
