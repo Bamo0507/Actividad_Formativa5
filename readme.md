@@ -1,4 +1,4 @@
-# Actividad Formativa 5 Matemática Dicreta (Algoritmos en Python)
+# Actividad Formativa 5 (Algoritmos en Python)
 
 ## **Descripción**
 
