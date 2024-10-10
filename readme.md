@@ -1,4 +1,4 @@
-# Proyecto de Algoritmos Matemáticos en Python
+# Actividad Formativa 5 Matemática Dicreta (Algoritmos en Python)
 
 ## **Descripción**
 
@@ -13,7 +13,21 @@ El programa principal presenta un menú interactivo que permite al usuario selec
 
 ## **Estructura del Proyecto**
 
-project/ │ ├── lib/ │ └── utils.py │ ├── bezout.py ├── criba.py ├── euclidean.py ├── isPrime.py ├── main.py │ ├── tests/ │ ├── test_utils.py │ ├── test_euclidean.py │ ├── test_bezout.py │ ├── test_criba.py │ └── test_isPrime.py │ └── README.md
+project/
+│ ├── lib/
+│ ├── utils.py
+│ └── bezout.py
+├── criba.py
+├── euclidean.py
+├── isPrime.py
+├── main.py
+│ ├── tests/
+│ ├── test_utils.py
+│ ├── test_euclidean.py
+│ ├── test_bezout.py
+│ ├── test_criba.py
+│ ├── test_isPrime.py
+│ └── README.md
 
 - **lib/utils.py**: Contiene funciones de validación utilizadas por otros módulos.
 - **bezout.py**: Implementa el algoritmo de Bézout para encontrar coeficientes que satisfacen la ecuación de Bézout.
@@ -38,7 +52,7 @@ Clona este repositorio en tu máquina local:
 
 ```bash
 git clone https://github.com/Bamo0507/Actividad_Formativa5.git
-cd proyecto-algoritmos
+cd Actividad_Formativa5
 ```
 
 ## 1. Instalar Dependencias
